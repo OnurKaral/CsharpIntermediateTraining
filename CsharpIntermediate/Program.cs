@@ -7,9 +7,9 @@ namespace CsharpIntermediate
     {
         static void Main(string[] args)
         {
-
-      
-       
+            var person = new Person();
+            person.SetBirthdate(new DateTime(1982,1,1));
+            Console.WriteLine(person.GetBirthdate());
 
 
         }
@@ -21,6 +21,10 @@ namespace CsharpIntermediate
             customer.Orders.Add(order);
             Console.WriteLine(customer.Id); 
             Console.WriteLine(customer.Name);
+         
+            customer.Orders.Add(new Order());
+            customer.Orders.Add(new Order());
+            Console.WriteLine(customer.Orders.Count);
 
         }
 
