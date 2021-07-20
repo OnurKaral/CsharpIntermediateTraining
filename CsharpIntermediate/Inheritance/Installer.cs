@@ -8,7 +8,8 @@
         {
             _logger = logger;
         }
-        public  void Install()
+
+        public void Install()
         {
             _logger.Log("installing");
         }

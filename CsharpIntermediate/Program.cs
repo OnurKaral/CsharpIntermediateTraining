@@ -3,11 +3,10 @@
 namespace CsharpIntermediate
 
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-
             var dbMigrator = new DbMigrator(new Logger());
 
             var logger = new Logger();
@@ -21,14 +20,14 @@ namespace CsharpIntermediate
             text.Copy();
         }
 
-
-        static void HttpCookie()
+        private static void HttpCookie()
         {
             var cookie = new HttpCookie();
             cookie["name"] = "Onur";
             Console.WriteLine(cookie["name"]);
         }
-        static void PropAge()
+
+        private static void PropAge()
         {
             var person = new Person(new DateTime(1998, 09, 18));
             //  person.SetBirthdate(new DateTime(1982,1,1));
@@ -37,27 +36,27 @@ namespace CsharpIntermediate
             Console.WriteLine(person.Age);
         }
 
-        static void UseCustomer()
+        private static void UseCustomer()
         {
             var customer = new Customer(3, "Onur");
             var order = new Order();
             customer.Orders.Add(order);
-            Console.WriteLine(customer.Id); 
+            Console.WriteLine(customer.Id);
             Console.WriteLine(customer.Name);
-         
+
             customer.Orders.Add(new Order());
             customer.Orders.Add(new Order());
             Console.WriteLine(customer.Orders.Count);
-
         }
 
-        static void UseParams()
+        private static void UseParams()
         {
             var calculator = new Calculator();
             Console.WriteLine(calculator.Add(1, 2));
             Console.WriteLine(calculator.Add(1, 2, 3, 3));
         }
-        static void UsePoints()
+
+        private static void UsePoints()
         {
             try
             {
@@ -71,7 +70,6 @@ namespace CsharpIntermediate
             catch (Exception)
             {
                 Console.WriteLine("An unexpected  error");
-
             }
         }
     }

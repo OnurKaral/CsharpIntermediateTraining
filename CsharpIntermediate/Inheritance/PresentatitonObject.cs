@@ -16,7 +16,5 @@ namespace CsharpIntermediate
         {
             Console.WriteLine("duplicated..");
         }
-
-    
     }
 }
