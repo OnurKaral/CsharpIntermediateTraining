@@ -7,13 +7,19 @@ namespace CsharpIntermediate
     {
         static void Main(string[] args)
         {
+            var text = new Text();
+            text.Width = 100;
+            text.Copy();
 
+        }
+
+
+        static void HttpCookie()
+        {
             var cookie = new HttpCookie();
             cookie["name"] = "Onur";
             Console.WriteLine(cookie["name"]);
         }
-
-
         static void PropAge()
         {
             var person = new Person(new DateTime(1998, 09, 18));
