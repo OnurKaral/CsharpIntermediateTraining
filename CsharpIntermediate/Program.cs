@@ -7,12 +7,13 @@ namespace CsharpIntermediate
     {
         static void Main(string[] args)
         {
-            var person = new Person();
-            person.SetBirthdate(new DateTime(1982,1,1));
-            Console.WriteLine(person.GetBirthdate());
+            var person = new Person(new DateTime(1998, 09, 18));
+          //  person.SetBirthdate(new DateTime(1982,1,1));
+          //  Console.WriteLine(person.GetBirthdate());
 
+            Console.WriteLine(person.Age);
 
-        }
+        } 
 
         static void UseCustomer()
         {
