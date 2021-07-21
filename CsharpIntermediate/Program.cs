@@ -7,6 +7,10 @@ namespace CsharpIntermediate
     {
         private static void Main(string[] args)
         {
+        }
+
+        private static void Log()
+        {
             var dbMigrator = new DbMigrator(new Logger());
 
             var logger = new Logger();
