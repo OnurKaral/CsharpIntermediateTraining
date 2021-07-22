@@ -1,5 +1,7 @@
 ﻿using AccessModifiers;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace CsharpIntermediate
 
@@ -7,6 +9,37 @@ namespace CsharpIntermediate
     public class Program
     {
          static void Main(string[] args)
+        {
+        }
+
+        private static void UpcastingDowncasting()
+        {
+            //Shape shape = new TextNew();
+            //TextNew text = (TextNew) shape;
+
+            TextNew text = new TextNew();
+            Shape shape = text;
+
+            text.Width = 200;
+            shape.Width = 100;
+
+            Console.WriteLine(text.Width);
+            Console.WriteLine(shape.Width);
+        }
+
+        private static void Boxing()
+        {
+            var list = new ArrayList();
+            list.Add(1);
+            list.Add("Onur");
+
+            var anotherlist = new List<int>();
+            var names = new List<string>();
+
+            var number = (int)list[1];
+        }
+
+        private static void AccessModifiers()
         {
             //Shape shape = new TextNew();
             //TextNew text = (TextNew) shape;
@@ -19,10 +52,7 @@ namespace CsharpIntermediate
 
             //Console.WriteLine(text.Width);
             //Console.WriteLine(shape.Width);
-        }
 
-        private static void AccessModifiers()
-        {
             var customer = new CustomerAccess();
             // AccessModifiers.RateCalculator calculator = new RateCalculator();
             customer.Promote();
