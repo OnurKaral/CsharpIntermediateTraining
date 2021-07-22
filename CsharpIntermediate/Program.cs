@@ -8,7 +8,9 @@ namespace CsharpIntermediate
     {
         static void Main(string[] args)
         {
-            var car = new Car("123");
+            TextNew text = new TextNew();
+            Shape shape = text;
+            
         }
 
         private static void AccessModifiers()
@@ -16,6 +18,7 @@ namespace CsharpIntermediate
             var customer = new CustomerAccess();
             // AccessModifiers.RateCalculator calculator = new RateCalculator();
             customer.Promote();
+            var car = new Car("123");
         }
 
         private static void Log()
