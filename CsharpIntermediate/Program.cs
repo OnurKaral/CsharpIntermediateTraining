@@ -6,11 +6,19 @@ namespace CsharpIntermediate
 {
     public class Program
     {
-        static void Main(string[] args)
+         static void Main(string[] args)
         {
-            TextNew text = new TextNew();
-            Shape shape = text;
-            
+            //Shape shape = new TextNew();
+            //TextNew text = (TextNew) shape;
+
+            //TextNew text = new TextNew();
+            //Shape shape = text;
+
+            //text.Width = 200;
+            //shape.Width = 100;
+
+            //Console.WriteLine(text.Width);
+            //Console.WriteLine(shape.Width);
         }
 
         private static void AccessModifiers()
