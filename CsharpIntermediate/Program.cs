@@ -6,7 +6,12 @@ namespace CsharpIntermediate
 {
     public class Program
     {
-         static void Main(string[] args)
+        static void Main(string[] args)
+        {
+            var car = new Car("123");
+        }
+
+        private static void AccessModifiers()
         {
             var customer = new CustomerAccess();
             // AccessModifiers.RateCalculator calculator = new RateCalculator();
