@@ -1,12 +1,16 @@
-﻿using System;
+﻿using AccessModifiers;
+using System;
 
 namespace CsharpIntermediate
 
 {
-    internal class Program
+    public class Program
     {
-        private static void Main(string[] args)
+         static void Main(string[] args)
         {
+            var customer = new CustomerAccess();
+            // AccessModifiers.RateCalculator calculator = new RateCalculator();
+            customer.Promote();
         }
 
         private static void Log()
