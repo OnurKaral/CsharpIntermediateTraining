@@ -4,7 +4,7 @@ namespace CsharpIntermediate
 {
     public class Rectangle : Shape
     {
-        public override void Draw()
+        public sealed override void Draw()
         {
             Console.WriteLine("Draw rectangle");
         }

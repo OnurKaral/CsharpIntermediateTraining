@@ -4,7 +4,7 @@ namespace CsharpIntermediate
 {
     public class Triangle : Shape
     {
-        public override void Draw()
+        public sealed override void Draw()
         {
             Console.WriteLine("Draw triangle");
         }
