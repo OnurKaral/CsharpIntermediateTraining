@@ -8,8 +8,19 @@ namespace CsharpIntermediate
 {
     public class Program
     {
-         static void Main(string[] args)
+        static void Main(string[] args)
         {
+        }
+
+        private static void OverridingMethods()
+        {
+            var shapes = new List<Shape>();
+            shapes.Add(new Circle());
+            shapes.Add(new Rectangle());
+            shapes.Add(new Triangle());
+
+            var canvas = new Canvas();
+            canvas.DrawShapes(shapes);
         }
 
         private static void UpcastingDowncasting()
