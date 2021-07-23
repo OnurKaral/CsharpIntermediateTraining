@@ -8,8 +8,10 @@ namespace CsharpIntermediate
 {
     public class Program
     {
-         static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            var dbMigrator = new DBMigratorI(new FileLogger("C:\\Users\\onurk\\Desktop\\log.txt"));
+            dbMigrator.Migrate();
         }
 
         private static void OverridingMethods()
